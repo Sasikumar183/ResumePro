@@ -1,0 +1,38 @@
+.resume-container {
+    max-width: 8.5in; /* 8.5 inches width for US letter size */
+    margin: auto;
+  }
+  
+  .resume-container h1 {
+    font-size: 20px; /* Name font size */
+  }
+  
+  .resume-container h2 {
+    font-size: 16px; /* Heading font size */
+  }
+  
+  .resume-container p, .resume-container ul li {
+    font-size: 14px; /* Content font size */
+  }
+  
+  .resume-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  @media print {
+    .resume-container {
+      width: 100%;
+      margin: 0;
+      page-break-inside: avoid;
+    }
+  
+    .page-break {
+      page-break-before: always;
+    }
+  
+    .resume-container header {
+      border: none;
+      margin-bottom: 0;
+    }
+  }
+  
